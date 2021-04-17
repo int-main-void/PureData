@@ -1,0 +1,16 @@
+#N canvas 0 22 1212 872 12;
+#X obj 116 320 osc~;
+#X obj 121 266 +~;
+#X obj 92 160 osc~;
+#X obj 102 206 *~;
+#X obj 115 359 outlet~;
+#X obj 76 28 inlet mod_freq;
+#X obj 213 32 inlet carrier_freq;
+#X obj 365 25 inlet FM_index;
+#X connect 0 0 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 5 0 2 0;
+#X connect 6 0 1 1;
+#X connect 7 0 3 1;
