@@ -1,0 +1,17 @@
+#N canvas 0 22 1583 991 10;
+#X obj 757 888 es4encoder~;
+#X obj 758 930 dac~ 19 20;
+#X obj 699 843 esx8cvencoder~;
+#X obj 829 841 esx8cvencoder~;
+#X obj 168 863 dac~ 1 2 3 4 5 6 7 8 9 10;
+#X text 175 892 Scarlett analog outs;
+#X obj 395 864 dac~ 11 12 13 14 15 16 17 18;
+#X text 429 892 ES-3;
+#X obj 106 54 adc~ 1 2 3 4 5 6 7 8;
+#X text 110 29 Scarlett analog ins;
+#X text 326 31 ES-6;
+#X obj 323 58 adc~ 11 12 13 14 15 16;
+#X connect 0 0 1 0;
+#X connect 0 1 1 1;
+#X connect 2 0 0 0;
+#X connect 3 0 0 1;

@@ -1,0 +1,26 @@
+#N canvas 612 48 540 355 10;
+#X obj 93 104 metro;
+#X floatatom 197 68 5 0 0 0 MS_Per_Beat - -;
+#X obj 46 199 outlet;
+#X obj 78 76 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0 1
+;
+#X floatatom 236 243 5 0 0 0 BPM - -;
+#X obj 209 184 expr 60000/$f1;
+#X obj 187 25 inlet tempo;
+#X obj 60 25 inlet start;
+#X obj 228 287 outlet bpm;
+#X obj 86 245 outlet totalcount;
+#X obj 108 148 f 0;
+#X obj 178 150 + 1;
+#X connect 0 0 2 0;
+#X connect 0 0 10 0;
+#X connect 1 0 0 1;
+#X connect 1 0 5 0;
+#X connect 3 0 0 0;
+#X connect 4 0 8 0;
+#X connect 5 0 4 0;
+#X connect 6 0 1 0;
+#X connect 7 0 3 0;
+#X connect 10 0 11 0;
+#X connect 10 0 9 0;
+#X connect 11 0 10 1;

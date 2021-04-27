@@ -1,0 +1,38 @@
+#N canvas 317 47 772 626 10;
+#X obj 273 96 masterclock;
+#X obj 265 46 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 349 57 500;
+#X obj 226 147 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X floatatom 307 139 5 0 0 0 - - -;
+#X obj 369 466 makenote;
+#X obj 375 511 noteout;
+#X floatatom 339 382 5 0 0 0 - - -;
+#X floatatom 390 383 5 0 0 0 - - -;
+#X floatatom 448 386 5 0 0 0 - - -;
+#X obj 145 244 random 25;
+#X obj 170 282 + 30;
+#X obj 448 200 random 127;
+#X obj 497 243 + 1;
+#X floatatom 460 299 5 0 0 0 - - -;
+#X obj 549 330 bendout;
+#X connect 0 0 3 0;
+#X connect 0 1 4 0;
+#X connect 1 0 0 0;
+#X connect 2 0 0 1;
+#X connect 3 0 7 0;
+#X connect 3 0 8 0;
+#X connect 3 0 9 0;
+#X connect 3 0 10 0;
+#X connect 3 0 12 0;
+#X connect 5 0 6 0;
+#X connect 5 1 6 1;
+#X connect 7 0 5 0;
+#X connect 8 0 5 1;
+#X connect 9 0 5 2;
+#X connect 10 0 11 0;
+#X connect 11 0 7 0;
+#X connect 12 0 13 0;
+#X connect 13 0 14 0;
+#X connect 13 0 15 0;

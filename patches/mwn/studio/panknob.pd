@@ -1,0 +1,23 @@
+#N canvas 0 22 530 454 10;
+#X obj 104 119 knob 32 32 0 1 0 0 empty empty empty 0 -8 0 8 5.46205e+06
+1 5.46208e+06 0 1;
+#X obj 43 8 inlet~;
+#X obj 202 296 outlet~;
+#X obj 39 284 outlet~;
+#X obj 39 261 *~;
+#X obj 202 271 *~;
+#X obj 70 224 -;
+#X obj 70 196 swap 1;
+#X text 107 100 pan;
+#X obj 39 198 +~;
+#X connect 0 0 5 1;
+#X connect 0 0 7 0;
+#X connect 1 0 9 0;
+#X connect 4 0 3 0;
+#X connect 5 0 2 0;
+#X connect 6 0 4 1;
+#X connect 7 0 6 0;
+#X connect 7 1 6 1;
+#X connect 9 0 4 0;
+#X connect 9 0 5 0;
+#X coords 0 -1 1 1 40 60 2 100 100;
