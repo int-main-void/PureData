@@ -1,0 +1,39 @@
+#N canvas 591 155 1003 751 12;
+#X obj 307 401 readsf~;
+#X obj 345 528 *~;
+#X msg 233 315 1;
+#X msg 386 280 open /Users/studio/Music/Audio Hijack/App Recording
+2.01706e+07 1204.mp3;
+#X obj 140 202 openpanel;
+#X obj 94 249 print;
+#X obj 109 173 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 155 298 print;
+#X msg 155 274 open \$1;
+#X floatatom 382 498 5 0 0 0 - - -;
+#X msg 290 175 open /Users/studio/Music/Samples/drums/hitsville/Reverb\\\ Studio\\\ Sampled\\\ Sounds\\\ -\\\ Drum\\\ Series\\\ Vol.\\\ 1\\\ |\\\ Hitsville\\\,\\\ USA\\\ -\\\ Detroit\\\,\\\ MI_Sample\\\ Pack/Drums\\\ Percussion/85MotorCityFunk_Loop_perc_6.wav
+;
+#X obj 233 77 t b b;
+#X obj 216 26 r loop;
+#X obj 366 446 s loop;
+#X obj 586 453 adc~ 1;
+#X obj 345 589 dac~ 3;
+#X obj 579 604 dac~ 1 2;
+#X msg 259 258;
+#X connect 0 0 1 0;
+#X connect 0 1 13 0;
+#X connect 1 0 15 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 8 0;
+#X connect 6 0 4 0;
+#X connect 8 0 0 0;
+#X connect 8 0 7 0;
+#X connect 9 0 1 1;
+#X connect 10 0 0 0;
+#X connect 11 0 2 0;
+#X connect 11 1 10 0;
+#X connect 12 0 11 0;
+#X connect 14 0 16 0;
+#X connect 14 0 16 1;
+#X connect 17 0 0 0;

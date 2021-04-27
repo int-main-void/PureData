@@ -1,0 +1,8 @@
+#N canvas 579 197 450 300 10;
+#X obj 191 183 dac~ 9 10;
+#X obj 156 25 osc~ 0.125;
+#X obj 265 82 esx8cvencoder~;
+#X obj 172 63 *~ 1024;
+#X connect 1 0 3 0;
+#X connect 2 0 0 0;
+#X connect 3 0 2 0;

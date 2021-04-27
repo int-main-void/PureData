@@ -1,0 +1,9 @@
+#N canvas 96 293 450 300 12;
+#X obj 102 140 *~;
+#X floatatom 138 98 5 0 0 0 - - -;
+#X obj 88 182 dac~ 1 2;
+#X obj 83 56 mwn/instruments/mwn.stringtrem 100 0.9;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 1 0 0 1;
+#X connect 3 0 0 0;

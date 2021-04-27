@@ -1,0 +1,6 @@
+#N canvas 94 518 450 300 12;
+#X obj 36 37 mwn.stringtrem 35 0.84;
+#X obj 159 130 esx8cvencoder~;
+#X obj 52 256 mwn.es3~;
+#X obj 61 192 phasor~ 1;
+#X connect 3 0 2 7;

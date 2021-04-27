@@ -1,0 +1,16 @@
+#N canvas 716 166 1098 848 10;
+#X obj 104 210 dac~ 11 12 13 14 15 16 17 18;
+#X obj 109 60 osc~ 0.5;
+#X obj 487 70 adc~ 9 10 11 12 13 14 15 16;
+#X obj 486 196 dac~ 1 2 3 4 5 6 7 8;
+#X obj 339 439 midiin;
+#X obj 333 488 midiout;
+#X text 108 232 ES-3 outputs;
+#X text 492 223 Scarlett outputs;
+#X text 494 91 ES-6 inputs;
+#X obj 809 20 osc~ 0.75;
+#X obj 809 41 *~ 1023;
+#X connect 1 0 0 0;
+#X connect 4 0 5 0;
+#X connect 4 1 5 1;
+#X connect 9 0 10 0;
