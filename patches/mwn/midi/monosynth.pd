@@ -1,0 +1,13 @@
+#N canvas 0 23 534 446 12;
+#X obj 96 279 outlet;
+#X obj 93 90 notein;
+#X obj 93 124 mtof;
+#X obj 263 224 f;
+#X obj 263 275 outlet;
+#X obj 259 160 t b f;
+#X connect 1 0 2 0;
+#X connect 1 1 5 0;
+#X connect 2 0 0 0;
+#X connect 3 0 4 0;
+#X connect 5 0 3 0;
+#X connect 5 1 3 1;

@@ -1,0 +1,29 @@
+#N canvas 932 283 858 675 12;
+#X obj 341 72 midirealtimein;
+#X obj 343 134 sel 248 250 251 252;
+#X obj 407 348 tgl 15 0 empty empty empty 17 7 0 10 -262144 -1 -1 0
+1;
+#X msg 377 167 1;
+#X obj 320 191 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 231 262 f;
+#X obj 297 260 + 1;
+#X floatatom 231 286 5 0 0 0 - - -;
+#X msg 420 194 1;
+#X msg 486 233 0;
+#X text 528 231 stop;
+#X text 458 194 continue;
+#X text 415 169 start;
+#X connect 0 0 1 0;
+#X connect 1 0 4 0;
+#X connect 1 1 3 0;
+#X connect 1 2 8 0;
+#X connect 1 3 9 0;
+#X connect 3 0 2 0;
+#X connect 3 0 6 0;
+#X connect 4 0 5 0;
+#X connect 5 0 6 0;
+#X connect 5 0 7 0;
+#X connect 6 0 5 1;
+#X connect 8 0 2 0;
+#X connect 9 0 2 0;
