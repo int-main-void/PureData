@@ -1,0 +1,11 @@
+#N canvas 1785 440 450 300 12;
+#X obj 70 37 inlet pitch;
+#X obj 70 61 tabosc4~ \$0-array1;
+#X obj 70 85 outlet~;
+#X obj 297 40 loadbang;
+#X obj 297 64 sinesum 64 1;
+#X obj 297 88 s \$0-array1;
+#X connect 0 0 1 0;
+#X connect 1 0 2 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
